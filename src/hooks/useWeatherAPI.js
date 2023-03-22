@@ -4,11 +4,9 @@ const fetchCurrentWeather = ({ authorizationKey, locationName }) => {
   return fetch(
     `https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0003-001?Authorization=${authorizationKey}&locationName=${locationName}`
   )
-    .then((response) => response.json()) // 取得伺服器回傳的資料並以 JSON 解析
+    .then((response) => response.json())
     .then((data) => {
-      // STEP 1：定義 `locationData` 把回傳的資料中會用到的部分取出來
       const locationData = data.records.location[0];
-      // STEP 2：將風速（WDSD）和氣溫（TEMP）的資料取出
       const weatherElements = locationData.weatherElement.reduce((neededElements, item) => {
         if (["WDSD", "TEMP"].includes(item.elementName)) {
           neededElements[item.elementName] = item.elementValue;
@@ -80,7 +78,6 @@ const fetchSunriseSunset = ({ authorizationKey, cityName }) => {
 };
 
 export default function useWeatherAPI({ authorizationKey, locationName, cityName }) {
-  // 定義會使用到的資料狀態
   const [weatherElement, setWeatherElement] = useState({
     locationName: "",
     description: "",
@@ -98,7 +95,6 @@ export default function useWeatherAPI({ authorizationKey, locationName, cityName
       ...prevState,
       isLoading: true,
     }));
-    // STEP 2：使用 Promise.all 搭配 await 等待兩個 API 都取得回應後才繼續
     const [currentWeather, weatherForecast, sunriseSunset] = await Promise.all([
       fetchCurrentWeather({ authorizationKey, locationName }),
       fetchWeatherForecast({ authorizationKey, cityName }),

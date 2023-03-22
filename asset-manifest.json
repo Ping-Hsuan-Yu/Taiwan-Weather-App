@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Taiwan-Weather-App/static/css/main.d28c3ad7.css",
-    "main.js": "/Taiwan-Weather-App/static/js/main.b51dfb38.js",
+    "main.js": "/Taiwan-Weather-App/static/js/main.f9d4d2d7.js",
     "static/media/day-snowing.svg": "/Taiwan-Weather-App/static/media/day-snowing.ba1cbc7669611ee425e874e171d02e70.svg",
     "static/media/night-snowing.svg": "/Taiwan-Weather-App/static/media/night-snowing.f00de84c0d9bed3a871ecc6fdd79f1ca.svg",
     "static/media/day-thunderstorm.svg": "/Taiwan-Weather-App/static/media/day-thunderstorm.c1e5aabc2d813feeb2e535cff2b025ee.svg",
@@ -20,13 +20,13 @@
     "static/media/refresh.svg": "/Taiwan-Weather-App/static/media/refresh.e352fc8bae35a5d76241e0bd9ec1d4c5.svg",
     "static/media/airFlow.svg": "/Taiwan-Weather-App/static/media/airFlow.93b49bb5f452a711b4783afb6e683672.svg",
     "static/media/loading.svg": "/Taiwan-Weather-App/static/media/loading.f8d56fd58925a1aaab4f80f1d8865c03.svg",
-    "static/media/night-clear.svg": "/Taiwan-Weather-App/static/media/night-clear.94eb7d671bc6d4dec6aa0b47038954df.svg",
     "index.html": "/Taiwan-Weather-App/index.html",
+    "static/media/night-clear.svg": "/Taiwan-Weather-App/static/media/night-clear.94eb7d671bc6d4dec6aa0b47038954df.svg",
     "main.d28c3ad7.css.map": "/Taiwan-Weather-App/static/css/main.d28c3ad7.css.map",
-    "main.b51dfb38.js.map": "/Taiwan-Weather-App/static/js/main.b51dfb38.js.map"
+    "main.f9d4d2d7.js.map": "/Taiwan-Weather-App/static/js/main.f9d4d2d7.js.map"
   },
   "entrypoints": [
     "static/css/main.d28c3ad7.css",
-    "static/js/main.b51dfb38.js"
+    "static/js/main.f9d4d2d7.js"
   ]
 }

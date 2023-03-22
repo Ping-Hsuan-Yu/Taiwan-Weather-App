@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;700&family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+@media (prefers-color-scheme: light) {
+  :root {
+      --backgroundColor: #ededed;
+      --foregroundColor: #f9f9f9;
+      --boxShadow: 0 1px 3px 0 #999999;
+      --titleColor: #212121;
+      --temperatureColor: #757575;
+      --textColor: #828282;
+      color-scheme: light
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --backgroundColor: #1F2022;
+    --foregroundColor: #121416;
+    --boxShadow: 0 1px 4px 0 rgba(12, 12, 13, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.15);
+    --titleColor: #f9f9fa;
+    --temperatureColor: #dddddd;
+    --textColor: #cccccc;
+      color-scheme: dark
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  font-family: 'Noto Sans', 'Noto Sans TC', sans-serif;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
